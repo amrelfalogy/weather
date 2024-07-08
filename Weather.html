@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <section class="all">
+
+        <section class="container-fluid bg-danger  section1">
+          <!-- nav -->
+          
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark  ps-lg-5 pe-lg-5 pt-lg-5 pb-lg-5 text-lg-center ">
+            <div class="container-fluid ps-lg-5 ms-5">
+              <img src="photoss/logo@2x.png" alt="logo" class="logo-img">
+          <div class="ms-lg-2  logo-text text-center ">
+            <a class="text-white p-1" >Weather</a>
+            <p class="text-light p-0 m-0">tagline goes here</p>
+          </div>
+              <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+                </button>
+              <div class="collapse navbar-collapse pe-lg-5" id="navbarSupportedContent ">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a  type="buttun" class="nav-link active home-btn" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  type="buttun" class="nav-link active btnn text-white" aria-current="page" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  type="buttun" class="nav-link active btnn text-white" aria-current="page" href="#">Live Cameras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  type="buttun" class="nav-link active btnn text-white" aria-current="page" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  type="buttun" class="nav-link active btnn text-white" aria-current="page" href="#">Contact</a>
+                  </li>
+             
+                </ul>
+              </div>
+            </div>
+          </nav>
+          </section>
+          
+          <div class="panner text-center">
+            <div class="location w-75 ">
+              <input type="text" placeholder="find your location...." class="position-relative w-100 search-input" id="searchInput">
+              <input type="button" value="find" type="submit" class=" position-absolute find" id="find">
+            </div>
+            <div id="alertSearchInput" class="alert w-75 alert-danger" role="alert">
+              <strong>To Help You...Please Enter Correct Word </strong>
+          </div>
+           
+          </div>
+          
+          <section class="divs " > 
+          <div class="w-75 d-flex row justify-content-center m-auto threedivs">    
+            <!-- ال divالكبير -->
+          <div class="col-lg-4  div1 ">
+          
+          <div class="d-flex flex-row justify-content-between p-2 yestarday-header">
+            <div id="yesName">
+            </div>
+            <div id="yesDate"></div>
+          </div>
+          
+          <div class="yestarday p-2 text-white">
+             <div class="yes-city" id="cityName">Cairo</div>
+             <div class="yes-tem" id="todayTem">
+               23 <sup>o</sup> C
+             </div>
+             <img src="" class="yes-img" id="todayIcon">
+             <div class="clear" id="todayText">Clear</div >
+             <div class="d-flex flex-row justify-content-between w-100 p-2">
+              <span class="span1">
+                <img src="photoss/icon-umberella.png">
+                <span id="willRain">30</span>%
+              </span>
+              <span class="span1">
+               <img src="photoss/icon-wind.png">
+               <span id="wind">30</span>Km/h
+             </span>
+             <span class="span1">
+               <img src="photoss/icon-compass.png">
+               <span id="direction">30</span>
+             </span>
+             </div>
+          </div>
+            </div>
+          
+            <div class="col-lg-4  div2 ">
+          
+              <div class=" p-2 today-header m-auto">
+                <div id="todayName">
+                  
+                </div>
+              
+              </div>
+              
+              <div class="today p-5 text-white text-center">
+                <img class="tod-icon" src="" id="tomIcon">
+                <div class="tod-tem-max mt-2">
+                  <span id="tomMaxTem">jj</span> <sup>o</sup> C
+                </div>
+                <div class="tod-tem-min mb-3">
+                  <span id="tomMinTem">20.3</span><sup>o</sup> C
+                </div>
+            
+                <div class="clear" id="tomText">Partly Cloudy</div>
+            
+             </div>
+            
+                </div>
+          
+                <div class="col-lg-4 div3 ">
+          
+                  <div class=" p-2 tom-header m-auto">
+                    <div id="tomName">
+                   
+                    </div>
+                  
+                  </div>
+                  
+                  <div class="today p-5 text-white text-center">
+                    <img class="tom-icon" src="" id="afTomIcon">
+                    <div class="tom-tem-max mt-2">
+                      <span id="ftomMax"></span><sup>o</sup> C
+                    </div>
+                    <div class="tom-tem-min mb-3">
+                      <span id="ftomMinx"></span><sup>o</sup> C
+                    </div>
+                
+                    <div class="clear" id="ftomText">Partly Cloudy</div>
+                
+                 </div>
+                
+                    </div>
+          
+          </div>
+          </section>
+      
+      </section>
+       
+      <footer>
+        
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="Jss.js"></script>
+</body>
+</html>
